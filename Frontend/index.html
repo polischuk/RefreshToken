@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="/Content/_base.less" rel="stylesheet/less" type="text/css" />
+
+    <!--Scripts-->
+    <script>
+        less = {
+            env: "development"
+        };
+    </script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/Scripts/less.min.js"></script>
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/angular-route.min.js"></script>
+    <script src="/Scripts/angular-local-storage.min.js"></script>
+    <script src="/Scripts/config.js"></script>
+    <script src="/Scripts/app.js"></script>
+
+    <!--Factories-->
+    <script src="/Scripts/factories/account/AuthInterceptorFactory.js"></script>
+    <script src="/Scripts/factories/account/AuthFactory.js"></script>
+
+    <!--Controllers-->
+    <script src="/Scripts/controllers/HomeController.js"></script>
+    <script src="/Scripts/controllers/LoginController.js"></script>
+</head>
+<body>
+    <div ng-view>
+         
+    </div>
+</body>
+</html>
